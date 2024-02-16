@@ -12,11 +12,7 @@ contract NFTPrimarySaleWithoutAllowlistTest is SoladyTest {
     address alice = address(111);
     address bob = address(222);
 
-    bytes32 allowlistRoot;
-    bytes32[] allowlistData = new bytes32[](2);
-
     uint120 publicPrice = 0.02 ether;
-    uint120 allowlistPrice = 0.01 ether;
 
     function setUp() public {
         dn = new NFTPrimarySaleWithoutAllowlist(
